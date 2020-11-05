@@ -13,7 +13,19 @@ $conn = new mysqli("mysql-sebastianswoboda1.alwaysdata.net","217205","TeczeImoty
   die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected successfully";
- 
+
+echo("<h3> ZAD 1 </h3>");
+$sql = "SELECT *,avg(zarobki) FROM pracownicy where (dzial=1 or dzial=2) and imie not like '%a' group by dzial";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>imie</th><th>zarobki</th><th>data_urodzenia</th><th>dzial</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["imie"].'</td><td>'.$row["zarobki"].'</td><td>'.$row["data_urodzenia"].'</td><td>'.$row["dzial"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
 $sql = "SELECT * FROM pracownicy";
 $wynik = mysqli_query($conn, $sql);
 
