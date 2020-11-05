@@ -50,7 +50,7 @@ $result = mysqli_query($conn, $sql);
             echo("<h3>3</h3>"); 
                 $result = mysqli_query($conn, $sql);  
                 echo('<table border="1"'); 
-                echo ("<tr><th>imie</th><th>zarobki</th><th>data_urodzenia</th><th>dzial</th></tr>"); 
+                echo ("<tr><th>imie</th><th>zarobki</th></tr>"); 
      while($row=mysqli_fetch_assoc($result)){ 
                 echo("<tr>");     
                 echo("<tr>");     
