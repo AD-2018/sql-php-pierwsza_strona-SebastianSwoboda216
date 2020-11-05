@@ -46,7 +46,7 @@ $result = mysqli_query($conn, $sql);
                 echo("</tr>"); } 
                 echo('</table>'); 
     
-    $sql ="select * from pracownicy,organizacja where id_org=dzial and imie not like '%a' having zarobki<40"; 
+    $sql ="select imie,zarobki from pracownicy,organizacja where id_org=dzial and imie not like '%a' having zarobki<40"; 
             echo("<h3>3</h3>"); 
                 $result = mysqli_query($conn, $sql);  
                 echo('<table border="1"'); 
