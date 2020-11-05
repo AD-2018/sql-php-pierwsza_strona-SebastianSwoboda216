@@ -20,7 +20,7 @@ $wynik = mysqli_query($conn, $sql);
 
 
     echo('<table border="1">');
-    echo('<th>Imie</th><th>zarobki</th>');
+    echo('<tr><th>imie</th><th>zarobki</th><th>data_urodzenia</th><th>dzial</th></tr>');
 
     while($wiersz=mysqli_fetch_assoc($wynik)){
         echo('<tr>');
