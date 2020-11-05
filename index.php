@@ -15,7 +15,7 @@ $conn = new mysqli("mysql-sebastianswoboda1.alwaysdata.net","217205","TeczeImoty
 echo "Connected successfully";
 
     
-$sql = "SELECT * FROM pracownicy";
+$sql = "SELECT * FROM pracownicy,organizacja where id_org=dzial;
 $wynik = mysqli_query($conn, $sql);
 
 
