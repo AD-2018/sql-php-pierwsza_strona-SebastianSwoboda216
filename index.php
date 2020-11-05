@@ -11,7 +11,6 @@
 
 $conn= new mysqli("sebastianswoboda1.alwaysdata.net","217205","Dziwaczek123","sebastianswoboda1_uwagatojestbazadanych");  
 $sql ="select * from pracownicy"; 
-    echo("<h3>tabelka</h3>"); 
         $result = mysqli_query($conn, $sql);  
             echo('<table border="1"'); 
             echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>zarobki</th><th>data_urodzenia</th></tr>"); 
