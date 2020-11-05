@@ -12,7 +12,7 @@ $conn = new mysqli("mysql-sebastianswoboda1.alwaysdata.net","217205","TeczeImoty
 $sql ="select * from pracownicy";
 $result = mysqli_query($conn, $sql);
     
- echo ('<table border = "1" class = "moja_tabelka">');
+ echo ('<table border = "1">');
     echo ("<tr><th>imie</th><th>zarobki</th><th>data_urodzenia</th><th>dzial</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
@@ -21,17 +21,31 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
   $sql ="select avg(zarobki),nazwa_dzial from pracownicy,organizacja where id_org=dzial and imie not like '%a' group by dzial having avg(zarobki)<35"; 
-echo("<h3>zadanie1</h3>"); 
-$result = mysqli_query($conn, $sql);  
-echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>avg(zarobki)</th><th>nazwa_dzial</th></tr>"); 
-while($row=mysqli_fetch_assoc($result)){ 
-  echo("<tr>");     
-  echo("<tr>");     
-  echo("<td>".$row['avg(zarobki)']."</td><td>".$row['nazwa_dzial']."</td>");     
-  echo("<tr>"); 
-  echo("</tr>"); } 
-echo('</table>'); 
+        echo("<h3>zadanie1</h3>"); 
+            $result = mysqli_query($conn, $sql);  
+                echo('<table border="1"'); 
+                echo ("<tr><th>avg(zarobki)</th><th>nazwa_dzial</th></tr>"); 
+        while($row=mysqli_fetch_assoc($result)){ 
+                echo("<tr>");     
+                echo("<tr>");     
+                echo("<td>".$row['avg(zarobki)']."</td><td>".$row['nazwa_dzial']."</td>");     
+                echo("<tr>"); 
+                echo("</tr>"); } 
+                echo('</table>'); 
+    
+    $sql ="select avg(zarobki),nazwa_dzial from pracownicy,organizacja where id_org=dzial group by dzial having avg(zarobki)<40"; 
+            echo("<h3>2</h3>"); 
+                $result = mysqli_query($conn, $sql);  
+                echo('<table border="1"'); 
+                echo ("<tr><th>avg(zarobki)</th><th>nazwa_dzial</th></tr>"); 
+        while($row=mysqli_fetch_assoc($result)){ 
+                echo("<tr>");     
+                echo("<tr>");     
+                echo("<td>".$row['avg(zarobki)']."</td><td>".$row['nazwa_dzial']."</td>");     
+                echo("<tr>"); 
+                echo("</tr>"); } 
+                echo('</table>'); 
+?>
 
 
 ?>
