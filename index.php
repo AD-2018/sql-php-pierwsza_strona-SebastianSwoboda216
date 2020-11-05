@@ -18,6 +18,8 @@ echo "Connected successfully";
 $sql = "SELECT * FROM pracownicy";
 $wynik = mysqli_query($conn, $sql);
 
+$sql = "SELECT avcg(zarobki) FROM pracownicy where dzial=1 or dzial=2) and imie not like '%a' group by dzial";
+$wynik = mysqli_query($conn, $sql);
 
     echo('<table border="1">');
     echo('<th>Imie</th><th>zarobki</th>');
