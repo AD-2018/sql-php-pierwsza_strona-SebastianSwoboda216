@@ -1,6 +1,7 @@
 table {
   width: 50%;
   text-align: left;
+  border-collapse: collapse;
 }
 th {
   height: 70px;
