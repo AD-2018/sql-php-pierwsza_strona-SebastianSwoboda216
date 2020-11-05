@@ -20,7 +20,7 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
     
-  $sql ="select avg(zarobki),nazwa_dzial from pracownicy,organizacja where id_org=dzial and imie not like '%a' group by dzial having avg(zarobki)<35"; 
+  $sql ="select avg(zarobki) as srednia_zarobkow,nazwa_dzial from pracownicy,organizacja where id_org=dzial and imie not like '%a' group by dzial having avg(zarobki)<35"; 
         echo("<h3>zadanie1</h3>"); 
             $result = mysqli_query($conn, $sql);  
                 echo('<table border="1"'); 
@@ -33,7 +33,7 @@ $result = mysqli_query($conn, $sql);
                 echo("</tr>"); } 
                 echo('</table>'); 
     
-    $sql ="select avg(zarobki),nazwa_dzial from pracownicy,organizacja where id_org=dzial group by dzial having avg(zarobki)<40"; 
+    $sql ="select avg(zarobki) as srednia_zarobkow,nazwa_dzial from pracownicy,organizacja where id_org=dzial group by dzial having avg(zarobki)<40"; 
             echo("<h3>2</h3>"); 
                 $result = mysqli_query($conn, $sql);  
                 echo('<table border="1"'); 
