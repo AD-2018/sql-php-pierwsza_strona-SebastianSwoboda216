@@ -7,12 +7,9 @@
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-SebastianSwoboda216">github</a>
     <h1>Sebastian Swoboda</h1>
 <?php
-$servername = mysql-"sebastianswoboda1.alwaysdata.net"; 
-$username = "217205"; 
-$password = "Dziwaczek123"; 
-$dbname = "sebastianswoboda1_uwagatojestbazadanych";  
+ 
 
-$conn= new mysqli($servername,$username,$password,$dbname);  
+$conn= new mysqli("sebastianswoboda1.alwaysdata.net","217205","Dziwaczek123","sebastianswoboda1_uwagatojestbazadanych");  
 $sql ="select * from pracownicy"; 
     echo("<h3>tabelka</h3>"); 
         $result = mysqli_query($conn, $sql);  
