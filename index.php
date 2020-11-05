@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 <?php
 
 $conn = new mysqli("mysql-sebastianswoboda1.alwaysdata.net","217205","TeczeImotylki123","sebastianswoboda1_uwagatojestbazadanych");
@@ -18,3 +24,5 @@ $wynik = mysqli_query($conn, $sql);
 
 
 ?>
+</body>
+</html>
