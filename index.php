@@ -6,6 +6,10 @@
 <body>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-SebastianSwoboda216">github</a>
     <h1>Sebastian Swoboda</h1>
+    <div class="nav">
+    <a href=PracownicyOrg.php">Prac. Org.</a>
+    <a href="F.Agregujace.php">Funkcje Agregujące</a>
+</div>
 <?php
 
 $conn = new mysqli("mysql-sebastianswoboda1.alwaysdata.net","217205","TeczeImotylki123","sebastianswoboda1_uwagatojestbazadanych");
