@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
 </head>
 <body>
 <div class="nav">
@@ -18,7 +19,7 @@ echo "<br>";
 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>imię</th><th>nazwa_działu</th></tr>"); 
+echo ("<tr><th>imie</th><th>nazwa_dzialu</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
 echo("<tr>");         
 echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td>");     
@@ -33,7 +34,7 @@ echo "<br>";
 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>imię</th><th>nazwa_działu</th></tr>"); 
+echo ("<tr><th>imie</th><th>nazwa_dzialu</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
 echo("<tr>");         
 echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td>");     
