@@ -6,11 +6,7 @@
 <body>
     <div class="nav">
     <a href="index.php">menu</a>
-    </div>
-    
-    
-<?php
-echo "to jeest pracownicy i organizacja";
-    ?>
+
+</div>
 </body>
 </html>
