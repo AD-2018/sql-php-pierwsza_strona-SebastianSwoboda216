@@ -1,3 +1,3 @@
 <?php
-to pracownicyorg
+echo "to pracownicyorg";
 ?>
