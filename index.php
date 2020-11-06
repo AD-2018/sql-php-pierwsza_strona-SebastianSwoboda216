@@ -7,8 +7,8 @@
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-SebastianSwoboda216">github</a>
     <h1>Sebastian Swoboda</h1>
     <div class="nav">
-    <a href=PracownicyOrg.php">Prac. Org.</a>
-    <a href="F.Agregujace.php">Funkcje Agregujące</a>
+    <a href=pracownicyorg.php">Prac. Org.</a>
+    <a href="fagregujace.php">Funkcje Agregujące</a>
 </div>
 <?php
 
