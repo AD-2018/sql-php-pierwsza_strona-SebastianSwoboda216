@@ -7,18 +7,64 @@
     <div class="nav">
     <a href="index.php">menu</a>
 </div>
-    <?php
+<?php
 
-$conn = new mysqli("mysql-sebastianswoboda1.alwaysdata.net","217205","TeczeImotylki123","sebastianswoboda1_uwagatojestbazadanych");
-$sql ="select * from pracownicy";
-$result = mysqli_query($conn, $sql);
+require_once("connect.php");
     
- echo ('<table border = "1">');
-    echo ("<tr><th>imie</th><th>zarobki</th><th>data_urodzenia</th><th>dzial</th></tr>");
-        while ($row = mysqli_fetch_assoc($result)) {
-                echo ('<tr>');
-                echo ('<td>'.$row["imie"].'</td><td>'.$row["zarobki"].'</td><td>'.$row["data_urodzenia"].'</td><td>'.$row["dzial"].'</td>');
-                echo ('</tr>');
-        }echo ('</table>');
+$sql ="select imie,dzial from pracownicy,organizacja where id_org=dzial and dzial=2 group by imie"; 
+echo("<h3>Zadanie 1</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+echo "<li>ok";
+} else {
+echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>imie</th><th>dzial</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+echo("<tr>");     
+echo("<tr>");     
+echo("<td>".$row['imie']."</td><td>".$row['dzial']."</td>");     
+echo("<tr>"); 
+echo("</tr>"); } 
+echo('</table>'); 
+  
+$sql ="select imie,dzial from pracownicy,organizacja where id_org=dzial and dzial=2 or dzial=3 group by imie"; 
+echo("<h3>Zadanie 2</h3>"); 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+echo "<li>ok";
+} else {
+echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>imie</th><th>dzial</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+echo("<tr>");     
+echo("<tr>");     
+echo("<td>".$row['imie']."</td><td>".$row['dzial']."</td>");     
+echo("<tr>"); 
+echo("</tr>"); } 
+echo('</table>'); 
+    
+$sql ="select imie, zarobki from pracownicy,organizacja where id_org=dzial group by imie having zarobki<30"; 
+echo("<h3>Zadanie 3</h3>"); 
+$result = mysqli_query($conn, $sql); 
+if ( $result) {
+echo "<li>ok";
+} else {
+echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>imie</th><th>zarobki</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+echo("<tr>");     
+echo("<tr>");     
+echo("<td>".$row['imie']."</td><td>".$row['zarobki']."</td>");     
+echo("<tr>"); 
+echo("</tr>"); } 
+echo('</table>');   
+    
+?>
 </body>
 </html>
