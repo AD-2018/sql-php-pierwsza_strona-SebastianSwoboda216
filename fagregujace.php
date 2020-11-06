@@ -12,10 +12,9 @@
 require_once("connect.php");
     
 $sql ="select imie,dzial from pracownicy,organizacja where id_org=dzial and dzial=2 group by imie"; 
-echo("<h3>Zadanie 1</h3>"); 
+echo("<h3>1</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-echo "<li>ok";
 } else {
 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
@@ -30,10 +29,9 @@ echo("</tr>"); }
 echo('</table>'); 
   
 $sql ="select imie,dzial from pracownicy,organizacja where id_org=dzial and dzial=2 or dzial=3 group by imie"; 
-echo("<h3>Zadanie 2</h3>"); 
+echo("<h3>2</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
-echo "<li>ok";
 } else {
 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
@@ -48,10 +46,9 @@ echo("</tr>"); }
 echo('</table>'); 
     
 $sql ="select imie, zarobki from pracownicy,organizacja where id_org=dzial group by imie having zarobki<30"; 
-echo("<h3>Zadanie 3</h3>"); 
+echo("<h3>3</h3>"); 
 $result = mysqli_query($conn, $sql); 
 if ( $result) {
-echo "<li>ok";
 } else {
 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
