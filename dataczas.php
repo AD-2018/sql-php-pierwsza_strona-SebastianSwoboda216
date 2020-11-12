@@ -9,12 +9,12 @@
 <?php
 require_once("connect.php");
     
-    require_once("connect.php");
+
 echo("<h2>Data Czas</h2>");
     
 echo("<h3>1</h3>");    
 $sql ="select *,DATEDIFF(CURDATE(),data_urodzenia) AS wiek from pracownicy,organizacja where id_org=dzial"; 
- 
+echo ("<li>".$sql."</li><br><br>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
 echo "<br>";
@@ -31,7 +31,7 @@ echo('</table>');
     
 echo("<h3>2</h3>");               
 $sql ="select *,YEAR(curdate())-YEAR(data_urodzenia) AS wiek from pracownicy,organizacja where id_org=dzial and dzial=1"; 
-
+echo ("<li>".$sql."</li><br><br>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
 echo "<br>";
