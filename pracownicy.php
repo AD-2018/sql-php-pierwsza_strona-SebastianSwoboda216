@@ -13,6 +13,7 @@
 require_once("connect.php");
     
 $sql ="select imie,dzial from pracownicy,organizacja where id_org=dzial and dzial=2 group by imie"; 
+echo ("<li>".$sql."</li><br><br>");
 echo("<h3>1</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -29,7 +30,8 @@ echo("<tr>");
 echo("</tr>"); } 
 echo('</table>'); 
   
-$sql ="select imie,dzial from pracownicy,organizacja where id_org=dzial and dzial=2 or dzial=3 group by imie"; 
+$sql ="select imie,dzial from pracownicy,organizacja where id_org=dzial and dzial=2 or dzial=3 group by imie";
+echo ("<li>".$sql."</li><br><br>");
 echo("<h3>2</h3>"); 
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -46,7 +48,8 @@ echo("<tr>");
 echo("</tr>"); } 
 echo('</table>'); 
     
-$sql ="select imie, zarobki from pracownicy,organizacja where id_org=dzial group by imie having zarobki<30"; 
+$sql ="select imie, zarobki from pracownicy,organizacja where id_org=dzial group by imie having zarobki<30";
+echo ("<li>".$sql."</li><br><br>");
 echo("<h3>3</h3>"); 
 $result = mysqli_query($conn, $sql); 
 if ( $result) {
