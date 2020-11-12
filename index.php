@@ -10,6 +10,7 @@
     <a href="pracownicyorg.php">Pracownicy Organizacja.</a>
     <a href="fagregujace.php">Funkcje Agregujące</a>
     <a href="pracownicy.php">Pracownicy</a>
+    <a href="data_czas.php">Data i czas</a>
 </div>
 </body>
 </html>
