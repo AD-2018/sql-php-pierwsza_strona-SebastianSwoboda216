@@ -28,7 +28,8 @@ echo("</tr>"); }
 echo('</table>'); 
 
 echo("<h3>2</h3>"); 
-$sql ="select Sum(zarobki) from pracownicy where imie like '%a'"; 
+$sql ="select Sum(zarobki) from pracownicy where imie like '%a'";
+echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
 echo "<br>";
