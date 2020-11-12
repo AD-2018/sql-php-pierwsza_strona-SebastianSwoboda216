@@ -12,6 +12,7 @@ require_once("connect.php");
 
 echo("<h3>1</h3>"); 
 $sql ="select Sum(zarobki) from pracownicy"; 
+echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
 echo "<br>";
