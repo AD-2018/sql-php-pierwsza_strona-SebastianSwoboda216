@@ -219,7 +219,7 @@ echo('</table>');
 echo("<h2>Formatowanie Dat</h2>")
   
 echo("<h3>1</h3>");     
-$sql ="select *,DATE_FORMAT(data_urodzenia,'%W-%m-%Y') from pracownicy,organizacja where id_org=dzial"; 
+$sql ="select *,DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy,organizacja where id_org=dzial"; 
 echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
 if ( $result) {
