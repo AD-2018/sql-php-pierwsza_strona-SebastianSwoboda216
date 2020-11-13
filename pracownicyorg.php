@@ -5,7 +5,10 @@
 </head>
 <body>
 <div class="nav">
-<a href="index.php">menu</a>
+    <a href="index.php">menu</a>
+    <a href="fagregujace.php">Funkcje Agregujące</a>
+    <a href="pracownicy.php">Pracownicy</a>
+    <a href="dataczas.php">Data i czas</a>
 </div>
 <?php
 
