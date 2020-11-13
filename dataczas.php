@@ -5,6 +5,9 @@
 </head>
     <div class="nav">
     <a href="index.php">menu</a>
+    <a href="pracownicyorg.php">Pracownicy Organizacja.</a>
+    <a href="fagregujace.php">Funkcje Agregujące</a>
+    <a href="pracownicy.php">Pracownicy</a>
 </div>
 <?php
 require_once("connect.php");
