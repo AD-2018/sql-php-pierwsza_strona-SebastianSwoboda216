@@ -219,16 +219,7 @@ echo('</table>');
 echo("<h2>Formatowanie Dat</h2>")
 
 echo("<h3>1</h3>");
-$sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy,organizacja where id_org=dzial";
-echo ("<li>".$sql."</li><br><br>");
-$result = mysqli_query($conn, $sql);
-echo ('<table border = "1" class = "moja_tabelka">');
-echo ("<tr><th>imie</th><th>wiek</th></tr>");
-while ($row = mysqli_fetch_assoc($result)) {
-echo ('<tr>');
-echo ('<td>'.$row["imie"].'</td><td>'.$row["wiek"].'</td>');
-echo ('</tr>');
-}echo ('</table>');
+
 ?>
 </body>
 </html>
