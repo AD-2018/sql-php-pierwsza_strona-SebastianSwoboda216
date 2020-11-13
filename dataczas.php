@@ -217,9 +217,6 @@ echo("</tr>"); }
 echo('</table>');
     
 echo("<h2>Formatowanie Dat</h2>")
-
-echo("<h3>1</h3>");
-
 ?>
 </body>
 </html>
