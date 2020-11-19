@@ -12,6 +12,7 @@
     <a href="pracownicy.php">Pracownicy</a>
     <a href="dataczas.php">Data i czas</a>
     <a href="form.php">Formularz</a>
+    <a href="form2.php">Formularz osobowy</a>
     <a href="strona.php">Strona</a>
 </div>
 </body>
