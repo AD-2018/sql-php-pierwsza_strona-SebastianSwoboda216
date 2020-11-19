@@ -11,7 +11,7 @@
     <a href="fagregujace.php">Funkcje Agregujące</a>
     <a href="pracownicy.php">Pracownicy</a>
     <a href="dataczas.php">Data i czas</a>
-    <a href="form.php">Data i czas</a>
+    <a href="form.php">Formularz</a>
 </div>
 </body>
 </html>
