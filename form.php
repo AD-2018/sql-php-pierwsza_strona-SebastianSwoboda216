@@ -6,5 +6,6 @@
    <input type="text" name="firstname"></br>
    <input type="submit" value="wyślij do strona.php">
 </form>
+   <a href="index.php">menu</a>
 </body>
 </html>
