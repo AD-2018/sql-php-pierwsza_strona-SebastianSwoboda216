@@ -8,10 +8,8 @@ require_once("connect.php");
 $sql = "DELETE FROM pracownicy WHERE id=".$_POST['id'];
 
 
-echo $sql;
-
 if ($conn->query($sql) === TRUE) {
-  echo "created successfully";
+  echo $sql;
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
