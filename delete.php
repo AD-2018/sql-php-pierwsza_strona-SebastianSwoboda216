@@ -1,11 +1,8 @@
 <?php
-echo("Usuwanie<br>");
-echo $_POST['id_pracownicy'];
-
 require_once("connect.php");
 
-
-$sql = "DELETE FROM pracownicy WHERE id_pracownicy=".$_POST['id'];
+$sql = "INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki,data_urodzenia) 
+       VALUES (null,".'"'.$_POST['imie'].'"'.','.$_POST['dzial'].','.$_POST['zarobki'].','.'"'.$_POST['data_urodzenia'].'"'.')';
 
 
 if ($conn->query($sql) === TRUE) {
