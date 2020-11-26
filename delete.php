@@ -1,11 +1,11 @@
 <?php
 echo("Usuwanie<br>");
-echo $_POST['id'];
+echo $_POST['id_pracownicy'];
 
 require_once("connect.php");
 
 
-$sql = "DELETE FROM pracownicy WHERE id=".$_POST['id'];
+$sql = "DELETE FROM pracownicy WHERE id_pracownicy=".$_POST['id'];
 
 
 if ($conn->query($sql) === TRUE) {
