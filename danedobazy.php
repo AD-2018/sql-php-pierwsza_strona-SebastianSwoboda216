@@ -2,6 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="style.css">
   <title>Prosty Formularz</title>
 </head>
 <body>
