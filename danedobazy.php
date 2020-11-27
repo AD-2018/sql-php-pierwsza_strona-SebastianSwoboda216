@@ -19,7 +19,7 @@
 </form>
 <h3>usuwanie pracownika</h3>
 <form action="delete.php" method="POST">
-	<g>ID</g><input type="number" name="id"></br>
+	ID<input type="number" name="id"></br>
    <input type="submit" value="USUŃ">
  </form>
  <a href="index.php">menu</a>
