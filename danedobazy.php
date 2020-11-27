@@ -43,5 +43,6 @@ echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['zar
 echo("</tr>");
 };
 echo("</table>");
+?>
 </body>
 </html>
