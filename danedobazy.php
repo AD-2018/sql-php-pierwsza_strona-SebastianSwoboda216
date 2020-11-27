@@ -23,6 +23,7 @@
  </form>
  <a href="index.php">menu</a>
 <?php
+require_once("connect.php");
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
