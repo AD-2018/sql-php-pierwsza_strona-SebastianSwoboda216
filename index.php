@@ -14,7 +14,7 @@
     <a href="form.php">Formularz</a>
     <a href="form2.php">Formularz osobowy</a>
     <a href="strona.php">Strona</a>
-    <a href="danedobazy.html">Usuwanie dodawanie</a>
+    <a href="danedobazy.php">Usuwanie dodawanie</a>
         
 <?php
 require_once("connect.php");
