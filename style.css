@@ -21,6 +21,6 @@ tr:nth-child(even) {background-color: #99FFFF;}
 h1 {
   color : red;
 }
-g {
+input {
   margin : 1rem;
 }
