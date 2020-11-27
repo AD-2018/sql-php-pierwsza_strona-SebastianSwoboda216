@@ -10,16 +10,16 @@
 <h3>dodawanie pracownika</h3>
 <form action="insert.php" method="POST">
 	<form action="insert.php" method="POST">
-	Imie:<input type="text" name="imie"><br>
-	Dział:<input type="text" name="dzial"></br>
-	Zarobki:<input type="text" name="zarobki"></br>
-	Data Urodzenia:<input type="text" name="data_urodzenia"></br>
-	<input type="submit" value="dodaj pracownika">
+	Imie:<input class="input" type="text" name="imie"><br>
+	Dział:<input class="input" type="text" name="dzial"></br>
+	Zarobki:<input class="input" type="text" name="zarobki"></br>
+	Data Urodzenia:<input class="input" type="text" name="data_urodzenia"></br>
+	<input class="input" type="submit" value="dodaj pracownika">
 </form>
 </form>
 <h3>usuwanie pracownika</h3>
 <form action="delete.php" method="POST">
-	ID<input type="number" name="id"></br>
+	ID<input class="input" type="number" name="id"></br>
    <input type="submit" value="USUŃ">
  </form>
  <a href="index.php">menu</a>
