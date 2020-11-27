@@ -7,7 +7,7 @@ echo "<br>";
 $sql = "DELETE FROM pracownicy WHERE id_pracownicy=".$_POST['id'];
 
 if ($conn->query($sql) === TRUE) {
-  echo $sql;
+  header('Location: https://jablonski-filip.herokuapp.com/daneDoBazy.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
