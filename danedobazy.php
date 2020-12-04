@@ -37,12 +37,22 @@ echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 echo("<h1>Tabela</h1>");
 echo("<table border='1'>");
-echo("<th>id</th><th>imie</th><th>zarobki</th><th>data urodzenia</th><th>dzial</th><th>nazwa dzialu</th><th>usuń pracownika</th>");
+echo("<th>ID</th><th>Imie</th><th>Zarobki</th><th>Data Urodzenia</th><th>Dzial</th><th>Nazwa dzialu</th><th>Usuń Pracownika</th>");
 while($row = mysqli_fetch_assoc($result)) {
-echo("<tr>");
-echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td><td>".$row['dzial']."</td><td>".$row['nazwa_dzial']."</td>");
-echo("</tr>");
-};
+echo('<tr>');
+echo('<td>'.$row['id_pracownicy'].'</td><td>'.$row['imie'].'</td><td>'.$row['zarobki'].'</td><td>'.$row['data_urodzenia'].'</td><td>'.$row['dzial'].'</td><td>'.$row['nazwa_dzial'].'</td>'.
+'<td>
+<form action="delete.php" method="POST">
+<input name="id" value="'.$row['id_pracownicy'].'" hidden>
+<input type="submit" value="X">
+</form>
+</td>');
+echo('</tr>');
+}
+echo('</table>');
+?>
+echo('</table>');
+?>
 ?>
 </body>
 </html>
