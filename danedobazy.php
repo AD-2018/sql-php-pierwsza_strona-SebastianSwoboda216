@@ -44,13 +44,11 @@ echo('<td>'.$row['id_pracownicy'].'</td><td>'.$row['imie'].'</td><td>'.$row['zar
 '<td>
 <form action="delete.php" method="POST">
 <input name="id" value="'.$row['id_pracownicy'].'" hidden>
-<input type="submit" value="X">
+<input type="submit" value="kaput">
 </form>
 </td>');
 echo('</tr>');
 }
-echo('</table>');
-?>
 echo('</table>');
 ?>
 </body>
