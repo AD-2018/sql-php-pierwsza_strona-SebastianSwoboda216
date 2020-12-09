@@ -1,6 +1,10 @@
 body {
   background-color: #ccccff;
 }
+a {
+   display: block;
+  width: 60px;
+}
 table {
   width: 50%;
   text-align: left;
