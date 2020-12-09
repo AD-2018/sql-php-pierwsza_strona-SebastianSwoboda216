@@ -2,8 +2,9 @@ body {
   background-color: #ccccff;
 }
 a {
-   display: block;
+  display: block;
   width: 60px;
+  padding: 8px 16px;
 }
 table {
   width: 50%;
