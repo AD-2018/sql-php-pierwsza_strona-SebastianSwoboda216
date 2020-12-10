@@ -15,6 +15,7 @@
     <a href="form2.php">Formularz osobowy</a>
     <a href="strona.php">Strona</a>
     <a href="danedobazy.php">Usuwanie dodawanie</a>
+    <a href="test.php">test</a>
         
 <?php
 require_once("connect.php");
@@ -37,6 +38,11 @@ echo("</tr>");
 };
 echo("</table>");
 ?>
+<select>
+  <option value="Tabela">Panna cotta 75g</option>
+  <option value="Tabela">Tiramisu 150g</option>
+  <option value="Tabela">Creme brulle 100g</option>
+</select>        
 </div>
 </body>
 </html>
