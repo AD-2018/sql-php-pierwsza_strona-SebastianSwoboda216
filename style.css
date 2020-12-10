@@ -7,8 +7,9 @@ a {
   padding: 10px 16px;
   border: 2px outset #ccc;
   background-color: #00FFFF;
-	color: #000;
- }
+  color: #000;
+  text-decoration: none;
+}
 a:hover{
     background-color: #ffffff;
     color: #000000;
