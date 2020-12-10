@@ -19,6 +19,21 @@
         
 <?php
 require_once("connect.php");
+echo ('<h2>Rozwijana Tabela<h2>');
+$sql ="select * from pracownicy";
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+} else {
+echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+echo('<select name="pracownik">');
+while($row = mysqli_fetch_assoc($result)) {
+echo '<option value="'.$row['id_pracownicy'].'">';
+echo($row['imie'].', '.$row['zarobki'].', '.$row['data_urodzenia'].', '.$row['dzial']);
+echo "</option>";
+};
+echo('</select>');
+echo ('<br>');
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
