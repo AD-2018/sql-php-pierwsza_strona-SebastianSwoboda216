@@ -53,11 +53,6 @@ echo("</tr>");
 };
 echo("</table>");
 ?>
-<select>
-  <option value="Tabela">Panna cotta 75g</option>
-  <option value="Tabela">Tiramisu 150g</option>
-  <option value="Tabela">Creme brulle 100g</option>
-</select>        
 </div>
 </body>
 </html>
