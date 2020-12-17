@@ -16,6 +16,7 @@
     <a href="strona.php">Strona</a>
     <a href="danedobazy.php">Usuwanie dodawanie</a>
     <a href="test.php">test</a>
+    <a href="biblksiazki.php">Biblioteka Ksiazki</a>
         
 <?php
 require_once("connect.php");
