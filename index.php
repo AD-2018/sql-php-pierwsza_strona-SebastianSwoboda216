@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <h1>Sebastian Swoboda</h1>
     <div class="nav">
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-SebastianSwoboda216">github</a>
-    <a href="pracownicyorg.php">Pracownicy Organizacja.</a>
-    <a href="fagregujace.php">Funkcje Agregujące</a>
-    <a href="pracownicy.php">Pracownicy</a>
-    <a href="dataczas.php">Data i czas</a>
-    <a href="form.php">Formularz</a>
-    <a href="form2.php">Formularz osobowy</a>
-    <a href="strona.php">Strona</a>
-    <a href="danedobazy.php">Usuwanie dodawanie</a>
-    <a href="test.php">test</a>
-    <a href="biblksiazki.php">Biblioteka Ksiazki</a>
+    <a href="pracownicy/pracownicyorg.php">Pracownicy Organizacja.</a>
+    <a href="pracownicy/fagregujace.php">Funkcje Agregujące</a>
+    <a href="pracownicy/pracownicy.php">Pracownicy</a>
+    <a href="pracownicy/dataczas.php">Data i czas</a>
+    <a href="pracownicy/form.php">Formularz</a>
+    <a href="pracownicy/form2.php">Formularz osobowy</a>
+    <a href="pracownicy/strona.php">Strona</a>
+    <a href="pracownicy/danedobazy.php">Usuwanie dodawanie</a>
+    <a href="pracownicy/test.php">test</a>
+    <a href="biblioteka/biblksiazki.php">Biblioteka Ksiazki</a>
         
 <?php
 require_once("connect.php");
