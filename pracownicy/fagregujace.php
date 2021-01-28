@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="nav">
-    <a href="index.php">menu</a>
+    <a href="../index.php">menu</a>
     <a href="pracownicyorg.php">Pracownicy Organizacja.</a>
     <a href="pracownicy.php">Pracownicy</a>
     <a href="dataczas.php">Data i czas</a>
 </div>
 <?php
-require_once("connect.php");
+require_once("../connect.php");
 
 echo("<h3>1</h3>"); 
 $sql ="select Sum(zarobki) from pracownicy"; 
