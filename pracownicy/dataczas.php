@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
     <div class="nav">
-    <a href="index.php">menu</a>
+    <a href="../index.php">menu</a>
     <a href="pracownicyorg.php">Pracownicy Organizacja.</a>
     <a href="fagregujace.php">Funkcje Agregujące</a>
     <a href="pracownicy.php">Pracownicy</a>
 </div>
 <?php
-require_once("connect.php");
+require_once("../connect.php");
     
 
 echo("<h2>Data Czas</h2>");
