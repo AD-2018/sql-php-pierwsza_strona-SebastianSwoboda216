@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <div class="nav">
-    <a href="index.php">menu</a>
+    <a href="../index.php">menu</a>
     <a href="fagregujace.php">Funkcje Agregujące</a>
     <a href="pracownicy.php">Pracownicy</a>
     <a href="dataczas.php">Data i czas</a>
 </div>
 <?php
 
-require_once("connect.php");
+require_once("../connect.php");
 echo("<h2>pracownicy  organizacja</h2>");
 $sql ="select * from pracownicy,organizacja where id_org=dzial group by imie";
 echo ("<li>".$sql."</li><br><br>");
