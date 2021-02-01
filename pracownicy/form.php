@@ -1,6 +1,6 @@
 <html>
 <head> Formularz </head>
-<title> Formularz </title>
+<title>Sebastian Swoboda 3 Ti</title>
 <body>
 <form action="strona.php" method="POST">
    <input type="text" name="firstname"></br>

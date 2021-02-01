@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Sebastian Swoboda 3 Ti</title>
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
