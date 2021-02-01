@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<title>Sebastian Swoboda 3 Ti</title>
 <head>
+<title>Sebastian Swoboda 3 Ti</title>
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
