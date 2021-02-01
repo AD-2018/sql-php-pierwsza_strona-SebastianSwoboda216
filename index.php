@@ -13,9 +13,7 @@
     <a href="pracownicy/dataczas.php">Data i czas</a>
     <a href="pracownicy/form.php">Formularz</a>
     <a href="pracownicy/form2.php">Formularz osobowy</a>
-    <a href="pracownicy/strona.php">Strona</a>
     <a href="pracownicy/danedobazy.php">Usuwanie dodawanie</a>
-    <a href="pracownicy/test.php">test</a>
     <a href="biblioteka/biblksiazki.php">Biblioteka Ksiazki</a>
         
 <?php
