@@ -6,8 +6,6 @@
 <body>
 <div class="h1">
 <a href="../index.php">Menu</a>
-<a href="tytul.php">Dodawanie autora</a>
-<a href="autor.php">Dodawanie tytułu</a>
 <div>
 <h1>Dodawanie autora</h1>
 <form action="autor.php" method="POST">
