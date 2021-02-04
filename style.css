@@ -9,6 +9,8 @@ a {
   background-color: #00FFFF;
   color: #000;
   text-decoration: none;
+  text-align: center;
+  float: left;
 }
 a:hover{
     background-color: #ffffff;
@@ -36,4 +38,29 @@ h1 {
 }
 input {
   margin : 1rem;
+}
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+  overflow: hidden;
+  background-color: rgb(150, 2, 2);
+}
+  
+  
+  
+  
+  
+  
+ 
+
+
+
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+  overflow: hidden;
+  background-color: #333;
 }
