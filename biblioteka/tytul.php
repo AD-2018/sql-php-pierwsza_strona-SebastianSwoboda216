@@ -1,17 +1,18 @@
-  
+<html>
+<head>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
 <?php
-echo "<li>". $_POST['tytul'];
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-$sql = "INSERT INTO bibl_tytul (id_tytul,tytul) 
-VALUES (null, '".$_POST['tytul']."')";
-echo "<li>". $sql;
+require_once("../connect.php");
+$sql = "INSERT INTO biblAutor (id,autor) 
+       VALUES (null,".'"'.$_POST['autor'].'"'.')';
 if ($conn->query($sql) === TRUE) {
-header ('Location:https://sebastian-swoboda.herokuapp.com/biblioteka/biblksiazki.php');
+  header('Location: https://sebastian-swoboda.herokuapp.com/biblioteka/biblksiazki.php');
 } else {
-echo "Error: " . $sql . "<br>" . $conn->error;
+  echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $conn->close();
-?> 
+?>
+</body>
+</html>
