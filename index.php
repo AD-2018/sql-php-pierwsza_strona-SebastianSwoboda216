@@ -16,7 +16,7 @@
     <a href="pracownicy/form2.php">Formularz osobowy</a>
     <a href="pracownicy/danedobazy.php">Usuwanie dodawanie</a>
     <a href="biblioteka/biblksiazki.php">Biblioteka Ksiazki</a>
-        
+</div>     
 <?php
 require_once("connect.php");
 echo ('<h2>Rozwijana Tabela<h2>');
@@ -53,6 +53,5 @@ echo("</tr>");
 };
 echo("</table>");
 ?>
-</div>
 </body>
 </html>
