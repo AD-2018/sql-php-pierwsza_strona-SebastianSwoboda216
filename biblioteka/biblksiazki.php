@@ -8,22 +8,7 @@
 <a href="../index.php">Menu</a>
 </div>
 <?php 
-require_once("../connect.php");
-$sql = "select (biblTytul_biblAutor.id) as ID_TAB, autor, tytul, biblWypoz from biblTytul_biblAutor,biblAutor,biblTytul where biblAutor.id=biblAutor_id and biblTytul.id=biblTytul_id order by autor,ID_TAB asc";
-$result = mysqli_query($conn, $sql);
-if ( $result) {
-} else {
-echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-echo('<select name="ksiazka">');
-while($row = mysqli_fetch_assoc($result)) {
-echo '<option value="'.$row['id'].'">';
-echo($row['autor'].', '.$row['tytul']);
-echo "</option>";
-};
-echo('</select>');
-echo ('<br>');
-echo("<h1>Tytuły</h1>"); 
+require_once("../connect.php"); 
 $sql = "select * from biblTytul";
 echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);
