@@ -6,7 +6,8 @@
 <body>
 <div class="h1">
 <a href="../index.php">Menu</a>
-<a href="tytul.php">Dodawaie tytulu</a>
+<a href="tytul.php">Dodawanie autora</a>
+<a href="autor.php">Dodawanie tytułu</a>
 </div>
 <?php 
 require_once("../connect.php"); 
