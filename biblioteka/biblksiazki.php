@@ -41,11 +41,5 @@ echo('</table>');
 <input type="text" name="tytul"></br>
 <input type="submit" value="dodaj">
 </form>
-<h1>Dodawanie autora</h1>
-<form action="/biblioteka/autor.php" method="POST">
-<p>Autor</p>
-<input type="text" name="autor"></br>
-<input type="submit" value="dodaj">
-</form>
 ?> 
 </html>  
