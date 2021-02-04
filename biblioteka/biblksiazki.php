@@ -49,5 +49,6 @@ echo ('<td>'.$row["id"].'</td><td>'.$row["autor"].'</td>');
 echo("<tr>"); 
 echo("</tr>"); } 
 echo('</table>'); 
+k
 ?> 
 </html>  
