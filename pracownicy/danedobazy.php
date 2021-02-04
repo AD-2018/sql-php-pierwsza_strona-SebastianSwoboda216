@@ -7,6 +7,7 @@
   <title>Prosty Formularz</title>
 </head>
 <body>
+<li><a href="index.php">menu</a></li>
 <h1>Dodawanie i usuwanie</h1>
 <h3>dodawanie pracownika</h3>
 <form action="insert.php" method="POST">
@@ -23,7 +24,6 @@
 	ID<input class="input" type="number" name="id"></br>
    <input type="submit" value="USUŃ">
  </form>
- <a href="index.php">menu</a>
 <?php
 require_once("../connect.php");
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";

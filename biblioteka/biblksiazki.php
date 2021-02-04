@@ -5,7 +5,7 @@
 </head>
 <body>
 <div class="h1">
-<a href="../index.php">Menu</a>
+<li><a href="../index.php">Menu</a></li>
 <div>
 <h1>Dodawanie autora</h1>
 <form action="autor.php" method="POST">
