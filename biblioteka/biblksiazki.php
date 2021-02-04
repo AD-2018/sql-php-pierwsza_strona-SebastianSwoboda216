@@ -8,6 +8,14 @@
 <a href="../index.php">Menu</a>
 <a href="tytul.php">Dodawanie autora</a>
 <a href="autor.php">Dodawanie tytułu</a>
+<div>
+<h1>Dodawanie autora</h1>
+<form action="autor.php" method="POST">
+<p>AUTOR:</p>
+<input type="text" name="autor"></br>
+<input type="submit" value="dodaj">
+</form>
+</div>
 </div>
 <?php 
 require_once("../connect.php"); 
