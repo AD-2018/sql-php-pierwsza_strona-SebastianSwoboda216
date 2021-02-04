@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="../style.css">
   <title>Prosty Formularz</title>
+  <li><a href="index.php">menu</a></li>
 </head>
 <body>
-<li><a href="index.php">menu</a></li>
 <h1>Dodawanie i usuwanie</h1>
 <h3>dodawanie pracownika</h3>
 <form action="insert.php" method="POST">
