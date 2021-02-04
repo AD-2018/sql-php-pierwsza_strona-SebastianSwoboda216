@@ -21,8 +21,8 @@ table {
 }
 th {
   height: 70px;
-  background-color: red;
-  color: yellow;
+  background-color: #4CAF50;
+  color: white;
 }
 tr {
   background-color: #99CCFF;
