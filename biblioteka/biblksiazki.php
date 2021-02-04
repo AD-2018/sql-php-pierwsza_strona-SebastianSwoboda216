@@ -35,6 +35,17 @@ echo ('<td>'.$row["id"].'</td><td>'.$row["autor"].'</td>');
 echo("<tr>"); 
 echo("</tr>"); } 
 echo('</table>'); 
-k
+<h1>Dodawanie tytulu</h1>
+<form action="/biblioteka/tytul.php" method="POST">
+<p>Tytul</p>
+<input type="text" name="tytul"></br>
+<input type="submit" value="dodaj">
+</form>
+<h1>Dodawanie autora</h1>
+<form action="/biblioteka/autor.php" method="POST">
+<p>Autor</p>
+<input type="text" name="autor"></br>
+<input type="submit" value="dodaj">
+</form>
 ?> 
 </html>  
