@@ -11,8 +11,16 @@
 <div>
 <h1>Dodawanie autora</h1>
 <form action="autor.php" method="POST">
-<p>AUTOR:</p>
+<p>Autor:</p>
 <input type="text" name="autor"></br>
+<input type="submit" value="dodaj">
+</form>
+</div>
+<div>
+<h3>Dodawanie tytulu</h3>
+<form action="tytul.php" method="POST">
+<p>Tytul</p>
+<input type="text" name="tytul"></br>
 <input type="submit" value="dodaj">
 </form>
 </div>
