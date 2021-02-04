@@ -35,11 +35,14 @@ echo ('<td>'.$row["id"].'</td><td>'.$row["autor"].'</td>');
 echo("<tr>"); 
 echo("</tr>"); } 
 echo('</table>'); 
-<h1>Dodawanie tytulu</h1>
-<form action="/biblioteka/tytul.php" method="POST">
-<p>Tytul</p>
-<input type="text" name="tytul"></br>
-<input type="submit" value="dodaj">
-</form>
+
+$sql = "INSERT INTO biblAutor (id,autor) 
+VALUES (null,".'"'.$_POST['autor'].'"'.')';
+if ($conn->query($sql) === TRUE) {
+header('Location: https://sebastian-swoboda.herokuapp.com/biblioteka/biblksiazki.php');
+} else {
+echo "Error: " . $sql . "<br>" . $conn->error;
+}
+$conn->close();
 ?> 
 </html>  
