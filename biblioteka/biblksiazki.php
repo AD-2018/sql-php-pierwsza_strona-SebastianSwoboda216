@@ -6,6 +6,7 @@
 <body>
 <div class="h1">
 <a href="../index.php">Menu</a>
+<a href="tytul.php">Dodawaie tytulu</a>
 </div>
 <?php 
 require_once("../connect.php"); 
@@ -35,14 +36,5 @@ echo ('<td>'.$row["id"].'</td><td>'.$row["autor"].'</td>');
 echo("<tr>"); 
 echo("</tr>"); } 
 echo('</table>'); 
-
-$sql = "INSERT INTO biblAutor (id,autor) 
-VALUES (null,".'"'.$_POST['autor'].'"'.')';
-if ($conn->query($sql) === TRUE) {
-header('Location: https://sebastian-swoboda.herokuapp.com/biblioteka/biblksiazki.php');
-} else {
-echo "Error: " . $sql . "<br>" . $conn->error;
-}
-$conn->close();
 ?> 
 </html>  
