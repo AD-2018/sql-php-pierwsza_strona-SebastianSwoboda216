@@ -1,6 +1,9 @@
   
 <?php
 echo "<li>". $_POST['tytul'];
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
 $sql = "INSERT INTO bibl_tytul (id_tytul,tytul) 
 VALUES (null, '".$_POST['tytul']."')";
