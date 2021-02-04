@@ -25,6 +25,15 @@
 </form>
 </div>
 </div>
+<div>
+echo('<h1>lista rozwijana<h1>');
+$sql ="SELECT autor,tytul from bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+}
+else {
+echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
 <?php 
 require_once("../connect.php"); 
 echo("<h1>Tytuł</h1>"); 
