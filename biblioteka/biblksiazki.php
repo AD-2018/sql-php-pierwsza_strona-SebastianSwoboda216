@@ -17,7 +17,7 @@
 </form>
 </div>
 <div>
-<h3>Dodawanie tytulu</h3>
+<h1>Dodawanie tytulu</h1>
 <form action="tytul.php" method="POST">
 <p>Tytul</p>
 <input type="text" name="tytul"></br>
