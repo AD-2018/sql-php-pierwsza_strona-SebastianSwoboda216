@@ -7,15 +7,15 @@
 <body>
     <h1>Sebastian Swoboda</h1>
     <div class="nav">
-    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-SebastianSwoboda216">github</a>
-    <a href="pracownicy/pracownicyorg.php">Pracownicy Organizacja.</a>
-    <a href="pracownicy/fagregujace.php">Funkcje Agregujące</a>
-    <a href="pracownicy/pracownicy.php">Pracownicy</a>
-    <a href="pracownicy/dataczas.php">Data i czas</a>
-    <a href="pracownicy/form.php">Formularz</a>
-    <a href="pracownicy/form2.php">Formularz osobowy</a>
-    <a href="pracownicy/danedobazy.php">Usuwanie dodawanie</a>
-    <a href="biblioteka/biblksiazki.php">Biblioteka Ksiazki</a>
+    <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-SebastianSwoboda216">github</a></li>
+    <li><a href="pracownicy/pracownicyorg.php">Pracownicy Organizacja.</a></li>
+    <li><a href="pracownicy/fagregujace.php">Funkcje Agregujące</a></li>
+    <li><a href="pracownicy/pracownicy.php">Pracownicy</a></li>
+    <li><a href="pracownicy/dataczas.php">Data i czas</a></li>
+    <li><a href="pracownicy/form.php">Formularz</a></li>
+    <li><a href="pracownicy/form2.php">Formularz osobowy</a></li>
+    <li><a href="pracownicy/danedobazy.php">Usuwanie dodawanie</a></li>
+    <li><a href="biblioteka/biblksiazki.php">Biblioteka Ksiazki</a></li>
 </div>     
 <?php
 require_once("connect.php");
