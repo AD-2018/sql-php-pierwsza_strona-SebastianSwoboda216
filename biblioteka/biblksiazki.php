@@ -9,6 +9,7 @@
 </div>
 <?php 
 require_once("../connect.php"); 
+echo("<h1>Tytuł</h1>"); 
 $sql = "select * from biblTytul";
 echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);
@@ -21,7 +22,7 @@ echo ('<td>'.$row["id"].'</td><td>'.$row["tytul"].'</td>');
 echo("<tr>"); 
 echo("</tr>"); } 
 echo('</table>');	
-echo("<h1>Autorzy</h1>"); 
+echo("<h1>Autor</h1>"); 
 $sql = "select * from biblAutor";
 echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);
