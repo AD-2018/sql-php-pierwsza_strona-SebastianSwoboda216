@@ -20,11 +20,11 @@
     </nav>
     <div class="grid">
         <strong>
-        <li class="gridLinkLi"><a class="gridLink" href="grid1.html">Strona 1</a></li>
-        <li class="gridLinkLi"><a class="gridLink" href="grid2.html">Strona 2</a></li>
-        <li class="gridLinkLi"><a class="gridLink" href="grid3.html">Strona 3</a></li>
-        <li class="gridLinkLi"><a class="gridLink" href="grid4.html">Strona 4</a></li>
-        <li class="gridLinkLi"><a class="gridLink" href="grid5.html">Strona 5</a></li>
+        <li class="gridLinkLi"><a class="gridLink" href="grid1.php">Strona 1</a></li>
+        <li class="gridLinkLi"><a class="gridLink" href="grid2.php">Strona 2</a></li>
+        <li class="gridLinkLi"><a class="gridLink" href="grid3.php">Strona 3</a></li>
+        <li class="gridLinkLi"><a class="gridLink" href="grid4.php">Strona 4</a></li>
+        <li class="gridLinkLi"><a class="gridLink" href="grid5.php">Strona 5</a></li>
         <li class="gridLinkLi"><a class="gridLink" href="grid6.html">Strona 6</a></li>
         <li class="gridLinkLi"><a class="gridLink" href="grid7.html">Strona 7</a></li>
         <li class="gridLinkLi"><a class="gridLink" href="grid8.html">Strona 8</a></li>
