@@ -16,7 +16,7 @@
     <li><a href="pracownicy/form2.php">Formularz osobowy</a></li>
     <li><a href="pracownicy/danedobazy.php">Usuwanie dodawanie</a></li>
     <li><a href="biblioteka/biblksiazki.php">Biblioteka Ksiazki</a></li>
-    <li><a href="grid/index.html">Grid</a></li>
+    <li><a href="grid/index.php">Grid</a></li>
 </div>     
 <?php
 require_once("connect.php");
