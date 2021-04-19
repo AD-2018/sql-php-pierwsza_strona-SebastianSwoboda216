@@ -4,9 +4,7 @@
 <title>Sebastian Swoboda 3 Ti</title>
 <link rel="stylesheet" href="../style.css">
 </head>
-    <div class="nav">
 <?php include"../menu.php" ?>
-</div>
 <?php
 require_once("../connect.php");
     
