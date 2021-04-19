@@ -26,7 +26,7 @@
         <li class="gridLinkLi"><a class="gridLink" href="grid8.html">Strona 8</a></li>
         <li class="gridLinkLi"><a class="gridLink" href="grid9.html">Strona 9</a></li>
         <li class="gridLinkLi"><a class="gridLink" href="grid10.html">Strona 10</a></li>
-        <li class="gridLinkLi"><a class="gridLink" href="grid1.html">Strona 11</a></li>
+        <li class="gridLinkLi"><a class="gridLink" href="grid11.html">Strona 11</a></li>
         <li class="gridLinkLi"><a class="gridLink" href="grid12.html">Strona 12</a></li>
         </strong>
     </div>
