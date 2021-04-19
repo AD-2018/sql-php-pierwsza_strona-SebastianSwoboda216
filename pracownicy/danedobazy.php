@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="../style.css">
   <title>Prosty Formularz</title>
-  <li><a href="index.php">menu</a></li>
+  <?php include"../menu.php" ?>
 </head>
 <body>
 <h1>Dodawanie i usuwanie</h1>
