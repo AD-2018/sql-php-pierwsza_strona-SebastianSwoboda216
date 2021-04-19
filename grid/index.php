@@ -13,9 +13,6 @@ include"../menu.php"
 ?>
     <nav>
         <div class="nav">
-            <strong>
-    	 <li><a class="GitHub" href="https://github.com/AD-2018/sql-php-pierwsza_strona-SebastianSwoboda216">Github</a></li>
-    </strong>
         </div>
         </br>
         </br>
