@@ -6,9 +6,9 @@
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div class="nav">
+
 <?php include"../menu.php" ?>
-</div>
+
 <?php
 
 require_once("../connect.php");
