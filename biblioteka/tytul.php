@@ -4,6 +4,7 @@
 </head>
 <body>
 <?php
+include"../menu.php"
 require_once("../connect.php");
 $sql = "INSERT INTO biblTytul (id,tytul) VALUES (null,".'"'.$_POST['tytul'].'"'.')';
 if ($conn->query($sql) === TRUE) {
