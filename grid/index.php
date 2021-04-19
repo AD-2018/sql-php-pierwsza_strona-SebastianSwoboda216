@@ -8,6 +8,9 @@
 </head>
 
 <body>
+<?php>
+include"../menu.php"
+?>
     <nav>
         <div class="nav">
             <strong>
