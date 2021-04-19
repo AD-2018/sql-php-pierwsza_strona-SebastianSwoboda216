@@ -5,10 +5,7 @@
 <link rel="stylesheet" href="../style.css">
 </head>
     <div class="nav">
-    <li><a href="../index.php">menu</a></li>
-    <li><a href="pracownicyorg.php">Pracownicy Organizacja.</a></li>
-    <li><a href="fagregujace.php">Funkcje Agregujące</a></li>
-    <li><a href="pracownicy.php">Pracownicy</a></li>
+<?php include"../menu.php" ?>
 </div>
 <?php
 require_once("../connect.php");
