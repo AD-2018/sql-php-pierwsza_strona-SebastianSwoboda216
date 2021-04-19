@@ -4,6 +4,7 @@
 </head>
 <body>
 <?php
+include"../menu.php"
 require_once("../connect.php");
 $sql = "INSERT INTO biblAutor (id,autor) VALUES (null,".'"'.$_POST['autor'].'"'.')';
 if ($conn->query($sql) === TRUE) {
