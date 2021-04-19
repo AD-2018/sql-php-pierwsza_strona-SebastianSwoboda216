@@ -8,10 +8,9 @@
 </head>
 
 <body>
-<?php>
-include"../menu.php"
-?>
-    <nav>
+
+<nav>
+<?php include"../menu.php" ?>
         <div class="nav">
         </div>
         </br>
